@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moraes Assistência Técnica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #000; /* Fundo preto */
+            color: #fff; /* Texto branco */
+        }
+
+        header {
+            background: #000; /* Fundo escuro para o cabeçalho */
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 50px; /* Tamanho da logo */
+            margin-right: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #ffd700; /* Cor dourada para o nome */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        nav ul li:not(:last-child)::after {
+            content: "|";
+            color: #ffd700; /* Cor dourada para a linha separadora */
+            position: absolute;
+            right: -15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700; /* Cor dourada no hover */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        section h2 {
+            color: #ffd700; /* Cor dourada para títulos */
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        section p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #ccc; /* Texto cinza claro */
+        }
+
+        .servicos, .lojas {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .servico, .loja {
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+            background: #333; /* Fundo escuro para os serviços */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra clara */
+            border-radius: 10px; /* Bordas arredondadas */
+        }
+
+        .servico h3, .loja h3 {
+            color: #feffb2; /* Cor dourada para títulos */
+            font-size: 1.5em;
+        }
+
+        .servico p, .loja p {
+            margin: 10px 0;
+            color: #ccc; /* Texto cinza claro */
+        }
+
+        .loja a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #555; /* Botão mais claro */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px; /* Bordas arredondadas */
+            transition: background 0.3s;
+        }
+
+        .loja a:hover {
+            background: #777; /* Efeito hover no botão */
+        }
+
+        footer {
+            background: #222; /* Fundo escuro para o rodapé */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .imagem-destaque {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .imagem-destaque img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px; /* Bordas arredondadas */
+        }
+
+        .servicos img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px; /* Bordas arredondadas */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="imagens/moraesassistenciatecnica.png" alt="Logo Moraes Assistência Técnica"> <!-- Adicione o caminho da sua logo -->
+                <h1>Moraes Assistência Técnica</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#lojas">Nossas Lojas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre" class="container">
+        <div class="imagem-destaque">
+            <img src="imagens/Início.png" alt="Assistência Técnica">
+        </div>
+        <h2>Sobre Nós</h2>
+        <p>A Moraes Assistência Técnica é referência em manutenção e reparo de máquinas de corte e acabamento para barbeiros. Com anos de experiência no mercado, oferecemos um serviço especializado, garantindo que suas ferramentas estejam sempre em perfeito funcionamento.
+
+            Nosso compromisso é proporcionar qualidade, precisão e durabilidade para as máquinas dos profissionais da barbearia. Realizamos diagnósticos precisos, trocas de peças, reparos eletrônicos, afiação de lâminas e muito mais, sempre com transparência e excelência.
+            
+            Além da assistência técnica, também investimos na formação de novos profissionais, oferecendo cursos presenciais para quem deseja se especializar na manutenção de máquinas.
+            
+            Seja para consertar sua máquina ou aprender uma nova profissão, a Moraes Assistência Técnica está aqui para atender você com confiança e profissionalismo!</p>
+    </section>
+
+    <section id="servicos" class="container">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos">
+            <div class="servico">
+                <img src="imagens/1.png" alt="Manutenção Preventiva">
+                <h3>Manutenção Preventiva</h3>
+                <p>Este serviço serve para realizar a manutenção preventiva em máquinas de cortar cabelo, garantindo maior durabilidade, desempenho e evitando problemas futuros. Ideal para quem quer prolongar a vida útil do equipamento.</p>
+            </div>
+            <div class="servico">
+                <img src="imagens/2.png" alt="Afiação de Lâminas">
+                <h3>Afiação de Lâminas</h3>
+                <p>Este serviço serve para afiar lâminas de máquinas de cortar cabelo, tesouras e navalhas, garantindo cortes precisos e suaves. Deixe seus equipamentos sempre afiados e prontos para uso.</p>
+            </div>
+            <div class="servico">
+                <img src="imagens/3.png" alt="Afiação de Tesouras">
+                <h3>Afiação de Tesouras</h3>
+                <p>Este serviço serve para afiar tesouras de barbeiro e cabeleireiro, garantindo cortes precisos e prolongando a vida útil do equipamento. Ideal para profissionais que buscam excelência no corte.</p>
+            </div>
+            <div class="servico">
+                <img src="imagens/4.png" alt="Troca de Guia e Mola">
+                <h3>Troca de Guia e Mola</h3>
+                <p>Este serviço serve para trocar a guia e a mola em máquinas sem fio Wahl, eliminando barulhos indesejados e restaurando o funcionamento suave e silencioso do equipamento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="lojas" class="container">
+        <h2>Nossas Lojas</h2>
+        <div class="lojas">
+            <div class="loja">
+                <img src="imagens/01 (1).png" alt="Loja Central do Brasil - RJ"> <!-- Adicione o caminho da imagem da loja 1 -->
+                <h3>Loja Central do Brasil - RJ</h3>
+                <p>Rua Bento Ribeiro, 85 - Mercado Popular Leonel de Moura Brizola</p>
+                <p>Telefone: (21) 96551-3535</p>
+                <a href="https://chat.inbarberapp.com/?id=eb555b23-8967-45a4-8bfa-3e0995881500" target="_blank">Agendar Serviço</a>
+            </div>
+            <div class="loja">
+                <img src="imagens/01.png" alt="Loja de Niterói"> <!-- Adicione o caminho da imagem da loja 2 -->
+                <h3>Loja de Niterói</h3>
+                <p>Rua São João, 75 - Centro de Niterói - Galeria Popular - Loja do Moraes</p>
+                <p>Telefone: (21) 96551-3535</p>
+                <a href="https://chat.fillapp.me/?id=bbd6eac2-c838-462f-ac37-29390ebcee7c" target="_blank">Agendar Serviço</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Moraes Assistência Técnica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('form-contato').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+        });
+    </script>
+</body>
+</html>
